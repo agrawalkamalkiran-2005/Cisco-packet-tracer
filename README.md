@@ -319,7 +319,7 @@ Download and install Cisco Packet Tracer from the official Cisco Networking Acad
 **2. Clone the Repository**
 
 ```bash
-git clone https://github.com/agrawalkamalkiran-2005/Cisco-Packet-Tracer-Networking.git
+git clone https://github.com/agrawalkamalkiran-2005/Cisco-packet-tracer.git
 ```
 
 **3. Navigate to the Project**
