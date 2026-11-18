@@ -23,7 +23,8 @@ A collection of seven Cisco Packet Tracer networking simulations covering fundam
 4. [Simulations](#simulations)
 5. [Getting Started](#getting-started)
 6. [How to Test](#how-to-test)
-7. [Author](#author)
+7. [Learning Outcomes](#learning-outcomes)
+8. [Author](#author)
 
 ---
 
@@ -64,7 +65,7 @@ Cisco-Packet-Tracer-Networking/
 └── README.md
 ```
 
-*Note: The structure above represents the suggested organization of the project files.*
+*Note: Adjust the folder structure to match your actual repository.*
 
 ---
 
@@ -181,7 +182,7 @@ The DHCP pools on Server1 have a gateway of `0.0.0.0`. Configure the correct gat
 
 This simulation demonstrates the configuration and interaction of multiple network services using seven servers across two scenarios.
 
-The domain `www.ashu.com` is configured to resolve to the web server in both scenarios.
+The domain `www.kamal.com` is configured to resolve to the web server in both scenarios.
 
 **Services Covered:**
 
@@ -193,8 +194,8 @@ The domain `www.ashu.com` is configured to resolve to the web server in both sce
 **Testing:**
 
 1. Open the web browser on a PC.
-2. Visit `http://www.ashu.com`.
-3. Execute `ping www.ashu.com` to test DNS resolution.
+2. Visit `http://www.kamal.com`.
+3. Execute `ping www.kamal.com` to test DNS resolution.
 4. Connect to the FTP server using:
 
 ```bash
@@ -222,7 +223,7 @@ This simulation demonstrates email communication between two users through a cen
 The mail server is configured for the domain:
 
 ```text
-ashutosh.com
+kamal.com
 ```
 
 **Protocols:**
@@ -234,9 +235,10 @@ ashutosh.com
 
 1. Open Desktop → Email on a PC.
 2. Configure the incoming and outgoing mail server addresses as `192.168.10.1`.
-3. Send an email from user `u2` to user `u1`.
-4. Open the email application on user `u1`.
-5. Click Receive to retrieve the message.
+3. Configure the email accounts using the `kamal.com` domain.
+4. Send an email from user `u2` to user `u1`.
+5. Open the email application on user `u1`.
+6. Click Receive to retrieve the message.
 
 ---
 
@@ -263,7 +265,6 @@ ip route 192.168.10.0 255.255.255.0 192.168.30.1
 ```
 
 **Testing:**
-
 - Ping `192.168.20.12` from a PC with IP `192.168.10.10`.
 - Execute `show ip route`.
 - Verify that static routes are displayed with the `S` identifier.
@@ -300,7 +301,6 @@ ip route 192.168.10.0 255.255.255.0 192.168.40.1
 ```
 
 **Testing:**
-
 - Execute `tracert 192.168.20.12` from a PC in the source LAN.
 - Observe the intermediate router hops.
 - Remove a static route from Router2 and observe where packet transmission fails.
